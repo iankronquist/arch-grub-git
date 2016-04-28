@@ -21,7 +21,7 @@ _pkgname="grub"
 pkgname="${_pkgname}-git"
 
 pkgdesc="GNU GRand Unified Bootloader (2) - GIT Version"
-pkgver=2.02.beta2.428.g697ecef
+pkgver=2.02.beta3.13.g7a5b301
 pkgrel=1
 url="https://www.gnu.org/software/grub/"
 arch=('x86_64' 'i686')
@@ -56,6 +56,7 @@ source=("grub::git+git://git.sv.gnu.org/grub.git#branch=master"
         "http://ftp.gnu.org/gnu/unifont/unifont-${_UNIFONT_VER}/unifont-${_UNIFONT_VER}.bdf.gz.sig"
         'grub-10_linux-detect-archlinux-initramfs.patch'
         'grub-add-GRUB_COLOR_variables.patch'
+		'apple.patch'
         '60_memtest86+'
         'grub.default'
         'grub.cfg')
@@ -66,6 +67,7 @@ sha1sums=('SKIP'
           'SKIP'
           '7ffd63c38d74f969f72e38fea3500345c5b968b2'
           'c03d2ea83aa6a44dc383fbf67c29c20469e57f1b'
+          '9e4c5091f12c3d15773285f011898b6cedabda3e'
           '10e30eb68fb95c86301112ac95c5b7515413152a'
           '55cf103b60f405bd37d44dd24357dedfff0214ee'
           '5b7fcb0718a23035c039eb2fda9e088bb13ae611')
